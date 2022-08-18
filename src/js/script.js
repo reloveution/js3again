@@ -1,4 +1,5 @@
-// Работа в современом режиме, где не работают некоторые неточности из старых стандартов
+// Работа в современом режиме, где не работают
+// некоторые неточности из старых стандартов
 "use strict";
 // a = 15;
 // console.log(a);
@@ -94,3 +95,81 @@
 // answers[1] = prompt('Where RU from?', 'M83');
 // answers[2] = prompt('Pss? ;)', 'Y');
 // console.log(answers[0] + ', ' + answers[1] + ', ' + answers[2]);
+
+// // пробую обратиться к элементу массива
+// // и узнать длинну массива
+// const answers = [];
+// answers[0] = 1;
+// answers[1] = 'a';
+// answers[2] = '2';
+// answers[3] = [4, 'd', 3];
+// console.log(typeof answers[0]);
+// console.log(typeof(answers[1]));
+// console.log(typeof(answers));
+// console.log(answers.length);
+// console.log(answers[3].length);
+// console.log(typeof(answers[3][2]));
+// console.log(typeof(answers[3][1]));
+// console.log (answers[0] + (answers[3][0] - answers[3][2]));
+
+// // null отдельный тип даныых, но определяется как объект
+// console.log(typeof(null));
+
+// есть команды домтупные только в браузере,
+// и наоборот – существующие только в node.js
+
+// // использование `бэктиков`
+// const category = `toys`;
+// console.log(`https://someurl.com/${category}/5`);
+// const user = `Mike`;
+// console.log(`Hello, ${user}`);
+
+// // Операторы
+// // Конкатинация. унарный плюс ставится перед каким-то аргументом,
+// // чтобы рассматривать его как число
+// console.log('arr' + " - object");
+// console.log(4 + " - object");
+// console.log(4 + +"4");
+
+// // Инкремент и декремент. Переменные можно задавать через запятую.
+// // Можно писать до и после аргумента – префикс и постфикс
+// // Если использовать эти операторы сразу, то постфикс будет
+// // выполняться после обращения оператора/функции к переменной
+// // У постфикса приоритет выше чем у префикса
+// let incr = 10,
+//     decr = 10;
+// incr++;
+// --decr;
+// console.log(incr);
+// console.log(decr);
+// console.log(++incr);
+// console.log(decr--);
+// console.log(decr);
+
+// // Остаток от деления
+// console.log(5%2);
+
+// // = присваивание
+// // == оператор проверки на равенство 4 = "4"
+// // === строгая проверка на идентичность 4 ≠ "4"
+// console.log(4 == '4');
+// console.log(2*4 === 8);
+
+// Порядок выполнения операций
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+// != это ≠
+// !== оператор проверки на неидентичность (=== наоборот)
+console.log(2 + 2 * 2 === 8);
+console.log((2 + 2) * 2 === 8);
+console.log(2 + 2 * 2 != 6);
+console.log(2 + 2 * 2 !== 6);
+console.log(2 + 2 * 2 !== '6');
+
+// // && оператор И возвращает true, только если все варианты правдивы
+// // || оператор ИЛИ возвращает true, если правдив хотя бы один вариант
+// // ! отрицание
+// const isChecked = true,
+//       isClosed = false;
+// console.log(!(isChecked && isClosed));
+// let bingo = !isChecked || isClosed;
+// console.log(bingo);
