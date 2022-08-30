@@ -221,35 +221,64 @@
 
 // console.log(personalMovieDB);
 
-if (1) {
-    console.log('Ok!');
-} else {
-    console.log('Error');
+
+
+
+/* if, else and case ---------------------------------*/
+
+// if (1) {
+//     console.log('Ok!');
+// } else {
+//     console.log('Error');
+// }
+
+// const num = 50;
+
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('So mach');
+// } else {
+//     console.log('Ok!');
+// }
+
+// (num === 50) ? console.log('ok!') : console.log('Error'); // Запись через тернарный оператор
+
+// switch (num) {
+//     case 49:
+//         console.log("Wrong");
+//         break;
+//     case 100:
+//         console.log('Wrong');
+//         break;
+//     case 51:
+//         console.log('Right!');
+//         break;
+//     default:
+//         console.log('Not now');
+//         break;
+// }
+
+
+/* Циклы -----------------------*/
+
+let num = 50;
+
+while (num < 55) {
+    console.log(num);
+    num++;
 }
 
-const num = 50;
-
-if (num < 49) {
-    console.log('Error');
-} else if (num > 100) {
-    console.log('So mach');
-} else {
-    console.log('Ok!');
+do {
+    console.log(num);
+    ++num;
 }
+while (num < 60);
 
-(num === 50) ? console.log('ok!') : console.log('Error'); // Запись через тернарный оператор
-
-switch (num) {
-    case 49:
-        console.log("Wrong");
-        break;
-    case 100:
-        console.log('Wrong');
-        break;
-    case 51:
-        console.log('Right!');
-        break;
-    default:
-        console.log('Not now');
-        break;
+for (let i =1; i < 10; i++) {
+    if (i === 6) {
+        // break;
+        continue;
+    }
+    console.log(i);
 }
